@@ -1,0 +1,653 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: auto;
+}
+:root{
+    --widthheight:20px;
+    --widthheightsmall-bloc1234--:220px;
+    --margin-right:50px;
+}
+body{
+    width: auto;
+}
+/*contenu header */
+header{
+    width:100%;
+    height:200px;
+    /* background-color:tomato;  */
+    background-image: url(img/miniboule.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;   
+}
+header::after{
+    content:"WHAT WE OFFER" ;
+    width: 300px;
+    height:40px;
+    position:absolute;
+    color: #fff;
+    top:90px;
+    left:550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:2em;
+}
+header::before{
+    content:"Loren opsum magengo" ;
+    width: 150px;
+    height: 20px;
+    position:absolute;
+    color: #fff;
+    top: 135px;
+    left: 620px;
+    
+}
+.bloc1{
+    background-color: rgba(255, 255, 255,.2);
+    border-bottom: 1px solid rgba(255, 255, 255,.3);
+    width:100%;
+    height:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: fixed; */
+}
+/*contenu bloc 1 -> titre, lienpage ,svg*/
+
+/*pour Titre*/
+.Titre{
+    color: #fff;
+    width: 100px;
+    height:40px;
+    margin-right:180px;
+    font-family: Gigi;
+    font-size: 2.5em;
+    font-weight:50px;
+    margin-bottom:10px;
+}
+
+/*Pour contenu lienpage*/
+.Lienpage{
+    width: 600px;
+    height: 30px;
+    margin-left: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn{ margin-left: 15px; }
+.btn:hover{border-bottom:1px solid #fff ;}
+.btn>a{
+    color: #fff;
+    text-decoration: none;
+}
+.btn>a:hover{color: #fff;}
+
+/*Pour contenu svg*/
+.SVG{
+    width: 150px;
+    height: 30px;
+    margin-left:180px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.svg1{
+    width: 25px;
+    height:25px;
+    margin-left: 15px;  
+}
+.svg2{
+    width:25px;
+    height:25px;
+    margin-left:15px;
+}
+.svg3{
+    width:25px;
+    height:25px;
+    margin-left:15px;
+}
+.vg{
+    width: var(--widthheight);
+    height:var(--widthheight);
+    color: #fff;
+    cursor: pointer;
+}
+
+/*pour contenu main*/
+main{
+    width:100%;
+    height:500px;
+    background-color:#fff;
+}
+.packet{
+    height:490px;
+    width: 800px;
+    margin-left: 300px;
+    position: absolute;
+    top:210px;
+}
+.packet1{
+    width:300px;
+    height:150px;
+    margin-left: 400px;
+    margin-bottom:5px;
+    position: relative;
+}
+.packet1::after{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    left: -200px;
+    top:15px;
+    background-image: url(img/boule10.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+aside>.ab{
+    width:150px;
+    height:140px;
+    margin-left: 20px; 
+    position: absolute;
+    top:8px;
+}
+aside>.a{
+   width:150px;
+   height:25px;
+   font-family:Gigi;
+   font-size:25px;
+   color: goldenrod;
+   display: flex;
+   justify-content:left;
+   align-items: left;
+}
+aside>.b{
+    width:150px;
+    height:25px;
+    margin-bottom:15px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    font-size: 18px;
+}
+aside>.c{
+    width:220px;
+    height:40px;
+    margin-bottom:6px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 10px;
+    text-align: left;
+}
+aside>.d{
+    background-color:#fff;
+    color: black;
+    font-size: 12px;
+    width:80px;
+    height:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0,0,0,.3);
+    cursor: pointer;
+}
+aside>.d:hover{
+    background-color:goldenrod;
+    color: #fff;
+    border-bottom: 2px solid rgba(0,0,0,.3);
+    border-top: 2px solid rgba(0,0,0,.3);
+}
+.packet2{
+    width:300px;
+    height:150px;
+    margin-bottom:5px ;
+    margin-left: 50px;
+}
+.packet2::after{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    right:250px;
+    top:170px;
+    background-image: url(img/boule7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+aside>.ef{
+    width:150px;
+    height:140px; 
+    margin-left:70px;
+    position: absolute;
+    top:160px;   
+}
+aside>.e{
+   width:150px;
+   height:25px;
+   display: flex;
+   justify-content:right;
+   align-items: right;
+   color: goldenrod;
+   font-size: 25px;
+   font-family: Gigi;
+   margin-left:60px;
+}
+aside>.f{
+    width:180px;
+    height: 25px;
+    display: flex;
+    margin-bottom: 15px;
+    justify-content:right;
+    align-items: right;
+    font-size:16px;
+    margin-left:34px;
+}
+aside>.g{
+    width:220px;
+    height:40px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 10px;
+    text-align:right;
+}
+aside>.h{
+    background-color:#fff;
+    color: black;
+    font-size: 12px;
+    width:80px;
+    height:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0,0,0,.3);
+    margin-left: 140px;
+}
+aside>.h:hover{
+    background-color:goldenrod;
+    color: #fff;
+    border-bottom: 2px solid rgba(0,0,0,.3);
+    border-top: 2px solid rgba(0,0,0,.3);
+}
+.packet3{
+    width:300px;
+    height:150px;
+    margin-left:400px;
+}
+.packet3::after{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    left:200px;
+    bottom:40px;
+    background-image: url(img/boule1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+aside>.ij{
+    width:150px;
+    height:140px; 
+    margin-left:40px;
+    position: absolute;
+    top:315px
+    
+}
+aside>.i{
+    width:100px;
+    height:25px;
+    font-family:Gigi;
+    font-size:25px;
+    color: goldenrod;
+    display: flex;
+    justify-content:left;
+    align-items: left;
+}
+aside>.j{
+    width:190px;
+    height:25px;
+    margin-bottom:15px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    font-size: 18px;
+}
+aside>.k{
+    width:220px;
+    height:40px;
+    margin-bottom:2px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 10px;
+    text-align: left;
+}
+aside>.l{
+    background-color:#fff;
+    color: black;
+    font-size: 12px;
+    width:80px;
+    height:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0,0,0,.3);
+}
+aside>.l:hover{
+    background-color:goldenrod;
+    color: #fff;
+    border-bottom: 2px solid rgba(0,0,0,.3);
+    border-top: 2px solid rgba(0,0,0,.3);
+}
+/*pour contenu pg1*/
+.PG1{
+    width: 100%;
+    height:200px;
+    background-image: url(img/burger.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.niv{
+    width: 400px;
+    height:180px;
+    margin-left: 500px;
+    margin-top:10px;
+    position: absolute;
+}
+.niv1{
+    color: #fff;
+    width:150px;
+    font-size:18px;
+    height:40px;
+    margin-left:80px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Gigi;
+}
+.niv2{
+    color: #fff;
+    width:350px;
+    font-size:1.2em;
+    height:50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:25px;
+}
+.niv3{
+    color: #fff;
+    width:350px;
+    height:40px;
+    font-size: 12px;
+    margin-bottom:5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px 20px 20px;
+    font-family: Gigi;
+}
+.niv4{
+    background-color: #fff;
+    color: black;
+    width:80px;
+    height:20px;
+    margin-left:130px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.niv4:hover{
+    background-color:rgba(255, 255, 255,.2);
+    color:#fff;
+    box-shadow: 0 0 0 2px #fff;
+}
+/*pour contenu pg2*/
+.PG2{
+    width: 100%;
+    height:280px;
+    background-color: rgba(0, 0,0,.7); 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center;
+}
+
+.PG2 > .block-footer 
+{
+    width: 310px;
+    height: 220px;
+    margin-left:20px;
+}
+  .PG2 > .block-foote 
+{
+    /* background-color: yellow; */
+    width: 310px;
+    height: 220px;
+    margin-left: 20px;
+}
+  .logo-ft 
+{
+    width: 173px;
+    height: 48px;
+    position: relative;
+    top: 7px;
+    left: -20px;
+    margin-left: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Gigi;
+    font-size: 2.5em;
+    cursor: pointer;
+}
+  
+  .txt-ft 
+{
+    width: 310px;
+    height: 70px;
+    margin-top:20px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+  
+  .reseau-ft 
+{
+    /* background-color: tomato; */
+    width: 250px;
+    height: 40px;
+    margin-top: 1px;
+    margin-left: -35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+  .ft
+{
+    /* background-color: #000; */
+    width: 20px;
+    height: 20px;
+    margin-left: 4px;
+}
+  .ft > svg 
+{
+    width: 20px;
+    height: 20px;
+}
+  .follow 
+{
+    /* background-color: yellow; */
+    width: 105px;
+    height: 25px;
+    position: relative;
+    top: 8px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+  .titre-1-ft 
+{
+    /* background-color: red; */
+    width: 175px;
+    height: 30px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+}
+  
+  .titre-2-ft,
+  .titre-3-ft 
+{
+    /* background-color: red; */
+    width: 285px;
+    height: 85px;
+    margin-top: 10px;
+    margin-left: 25px;
+    color: #fff;
+    font-size: 14px;
+}
+  .svg-twit-1 
+{
+    /* background-color: #000; */
+    width: 30px;
+    height: 30px;
+    position: relative;
+    bottom: 187px;
+    left: -5px;
+}
+  .svg-twit-2 
+{
+    /* background-color: #000; */
+    width: 30px;
+    height: 30px;
+    position: relative;
+    bottom: 123px;
+    left: -5px;
+}
+  .svg-twit-1 > svg,
+  .svg-twit-2 > svg 
+{
+    width: 25px;
+    height: 25px;
+}
+  .titre-8-ft 
+{
+    width: 170px;
+    height: 19px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+}
+  .grid-b 
+{
+    background-color: rgb(128, 128, 128, 0.5);
+    width: 92px;
+    height: 92px;
+}
+  .second-grid 
+{
+    width: 310px;
+    height: 197px;
+    display: grid;
+    grid-template-columns: repeat(3, 30fr);
+    gap: 12px;
+    grid-template-rows: repeat(3, 30fr);
+}
+  .boite-rech-1 
+{
+    width: 280px;
+    height: 70px;
+    border-bottom: 1px solid rgb(128, 128, 128, 0.5);
+    margin: auto;
+    margin-top: 20px;
+}
+  .boite-rech-2 
+{
+    width: 200px;
+    height: 20px;
+    margin-top: 5px;
+    color: #fff;
+    margin-left: 20px;
+}
+  .rech 
+{
+    width: 300px;
+    height: 40px;
+    border-radius: 7px 7px 7px 7px;
+    color: #fff;
+    font-size: 12px;
+}
+  .input > input[type="text"] 
+{
+    width: 250px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border: 1px solid rgb(5, 12, 14, 0.5);
+    border-radius: 5px 5px 5px 5px;
+    padding: 8px 10px;
+    background-color: rgba(219, 222, 224, 0.924);
+}
+  .input-1
+{
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top:-178px;
+  right: -437px;
+  z-index:1;
+}
+  .input-1>svg
+{
+   width: 20px;
+  height: 20px;
+  fill: #000; 
+}
+
+/*pour contenu footer*/
+footer
+{
+    width: 100%;
+    height:60px;
+    background-color:rgba(0, 0,0,.4); 
+}
+.signature 
+{
+    width: 330px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size:20px; 
+    font-family: Gigi; 
+}
+.my-Svg
+{
+    width: 22px;
+    height: 22px;
+    margin-left:8px;
+    margin-right:8px;
+    margin-bottom:3px;
+}
+.small-bloc
+{
+    width: 250px;
+    height:60px;
+    margin-left:500px;
+}
